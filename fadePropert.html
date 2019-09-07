@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fadeProperty</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+#fadein
+{
+    display: none;
+}</style>
+</head>
+
+<body>
+    <p id="fadeout">this will fade out</p>
+    <p id="fadein">this will fade in</p>
+    <button id="out">fade out</button>
+    <button id="in">fade in</button>
+    <script>
+    
+    $("#out").click(function()
+    {
+        $("#fadeout").css("display","none");         
+    })
+    $("#in").click(function()
+    {
+        $("#fadein").css("display","block");
+    });
+
+    </script>
+</body>
+</html>

@@ -5,20 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+    #circle
+    {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: black;
+    }
+    
+    
+    </style>
+   
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
 </head>
 <body>
-    <script>  
-    if( typeof jquery-3 == undefined)
-    {
-        alert("not installed");
-    }
-    else
-    {
-        alert("installed");
-    }
-    </script>
+
 
     
+    <div id="circle"></div>
+   
+    <!-- <iframe src="https://www.google.com" height="1000px"  width="1000px" ></iframe> -->
+    <script>
+        // $(".square").click(function () {
+        //         alert("The paragraph was clicked.");
+        //     });
+            
+        //         $("#circle").click(function () {
+        //             alert("The circle was clicked.");
+        //         });
+
+     $("#circle").hover(function()
+     {
+         $("#circle").css("display","none");
+     });
+
+    </script>
 </body>
 </html>
