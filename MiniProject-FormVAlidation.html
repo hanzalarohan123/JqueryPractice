@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style type="text/css">
+       #mainDiv
+       {
+        width: 550px;
+        margin: 0% auto;
+       }    
+       .Element
+       {
+          padding: 2px 1px; 
+
+       }
+       label
+       {
+           float: left;
+           width: 270px;
+           position: relative;
+           font-size: 200%;
+
+       }
+       input
+       {
+           font-size: 200%;
+           border-radius: 5px;
+           border: 1px solid black;
+           padding: 1px;
+           width: 230px;
+       }
+      
+
+    </style>
+</head>
+<body>
+    <div id="mainDiv">
+        <div class="Element">
+                <label for="Email">Email</label>
+                <input id="Email" type="text" placeholder="xyz@gmail.com">
+        </div>
+    
+        <div class="Element">
+                 <label for="phone">Phone</label>
+                 <input id="Phone" type="text" placeholder="0123456789">
+        </div>
+
+        <div class="Element">
+            <label for="Passwowrd">Passwowrd</label>
+            <input id="Passwowrd" type="text" >
+        </div>
+
+        <div class="Element">
+            <label for="ConfirmPasswowrd">Confirm Passwowrd</label>
+            <input id="ConfirmPasswowrd" type="text" >
+        </div>
+    </div>
+</body>
+</html>
