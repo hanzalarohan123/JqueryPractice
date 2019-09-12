@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Droppble</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous">
+    </script>
+    <style type="text/css">
+        #lit {
+            width: 60px;
+            height: 60px;
+            border: 1px solid chocolate;
+            border-radius: 0.5px;
+            background-color: blue;
+        }
+    
+        #big {
+            width: 150px;
+            height: 150px;
+            background-color: azure;
+            border: 1px solid black;
+            border-radius: 1px;
+    
+        }
+    </style>
+</head>
+<body>
+    
+<div id="lit"></div>
+<div id="big"></div>
+<script type="text/javascript">
+   $("#lit").draggable();
+   $("#lit").droppable();
+</script>
+</body>
+</html>
