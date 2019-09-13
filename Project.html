@@ -14,26 +14,49 @@
     <style type="text/css">
         #topbar
         {
-            width: 1600px;
+            width: auto;
             height: 40px;
             border-radius: 5px;
             background-color: aliceblue;
+            text-align: center;
         }
-        li
+        #logo
+        {
+            float: left;
+            position: absolute;
+            margin: 5px 5px;
+            font-size: 150%; 
+        }
+        #buttons
+        {
+            position: relative;
+            display: inline-flex;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 5px;
+            width: 300px;
+            margin: 8px 3px;
+            height: 20px;
+
+        }
+        .tapButton
         {
             
-            border: 1px solid salmon;
-            padding: 5px 5px;
-            margin: 5px 0px;
-            display: inline-block;
-            border-style: solid;
-            position: relative;
-            border-radius: 5px;
+            padding: 1.5px 2px;
+            margin: 1px 5px;
+            
         }
-        ul
+        .line
         {
-            margin: 0px 550px;
+            height: 18px;
+            color:black;
+            border: 1px solid black;
         }
+
+
+
+        
+
         
     
 
@@ -42,13 +65,17 @@
 <body>
     
     <div id="topbar">
-        
-                <ul>
-                     <li>CSS</li>
-                     <li>HTML</li>
-                     <li>JAVASCRIPT</li>
-                     <li>OUTPUT</li>
-                </ul>
+        <div id="logo">CODE PLAYER</div>
+        <div id="buttons">
+            <div class="tapButton" id="html">HTML</div>
+            <div class="line"></div>
+            <div class="tapButton" id="css">CSS</div>
+            <div class="line"></div>
+            <div class="tapButton" id="javascript">JAVASCRIPT</div>
+            <div class="line"></div>
+            <div class="tapButton" id="output">OUTPUT</div>
+        </div>
+    </div>
        
 </body>
 </html>
