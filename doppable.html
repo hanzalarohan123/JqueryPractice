@@ -34,7 +34,14 @@
 <div id="big"></div>
 <script type="text/javascript">
    $("#lit").draggable();
-   $("#lit").droppable();
+   $("#lit").droppable({
+        drop: function (event, ui) {
+            alert("hi");
+         }
+    });
+       
+       
+   
 </script>
 </body>
 </html>
