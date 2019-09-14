@@ -72,6 +72,7 @@
             resize: none;
            
             border-top:none;
+            border-left: none;
             border-color:  black;
             
         }
@@ -85,6 +86,10 @@
         {
             height: auto;
             border: none;
+        }
+        .hidden
+        {
+            display: none;
         }
 
 
@@ -111,8 +116,10 @@
         </div>
     </div>
     <div id="bodyTabs">
-        <textarea id="html textarea" class="panel" > hello world!</textarea>
-        <iframe  id="outout textarea" class="panel"></iframe>
+        <textarea id="htmltextarea" class="panel" > hello world!</textarea>
+        <textarea id="csstextarea" class="hidden"> hello world!</textarea>
+        <textarea id="javascripttextarea" class="hidden"> hello world!</textarea>
+        <iframe  id="outputtextarea" class="panel"></iframe>
     </div>
        
 
@@ -124,7 +131,11 @@
         $(this).removeClass("highlighedClass");
     })  
     $(".panel").height($(window).height() - $("#topbar").height()-8 );
-      $(".panel").width($(window).width()/2- 8);
+      $(".panel").width($(window).width()/4- 8);
+      $("iframe").contents().find("html").html($("#htmltextarea").val());
+     $("textarea").on('change keyup paste', function () {
+         $("iframe").contents().find("html").html($("#htmltextarea").val());
+        });
 </script>
 
 
