@@ -14,11 +14,17 @@
     <style type="text/css">
         #topbar
         {
+            margin: 0 auto;
             width: auto;
             height: 40px;
             border-radius: 5px;
             background-color: aliceblue;
             text-align: center;
+        }
+        body
+        {
+            margin: 0px auto;
+        
         }
         #logo
         {
@@ -36,6 +42,7 @@
             border-radius: 5px;
             width: 300px;
             margin: 8px 3px;
+            
             height: 20px;
 
         }
@@ -52,6 +59,33 @@
             color:black;
             border: 1px solid black;
         }
+        .active
+        {
+            color: blue;
+        }
+        .highlighedClass
+        {
+            background-color: grey;
+        }
+        textarea
+        {
+            resize: none;
+           
+            border-top:none;
+            border-color:  black;
+            
+        }
+        .panel
+        {
+             width: 50%;
+             
+
+        }
+        iframe
+        {
+            height: auto;
+            border: none;
+        }
 
 
 
@@ -67,15 +101,68 @@
     <div id="topbar">
         <div id="logo">CODE PLAYER</div>
         <div id="buttons">
-            <div class="tapButton" id="html">HTML</div>
+            <div class="tapButton active" id="html">HTML</div>
             <div class="line"></div>
             <div class="tapButton" id="css">CSS</div>
             <div class="line"></div>
             <div class="tapButton" id="javascript">JAVASCRIPT</div>
             <div class="line"></div>
-            <div class="tapButton" id="output">OUTPUT</div>
+            <div class="tapButton active" id="output">OUTPUT</div>
         </div>
     </div>
+    <div id="bodyTabs">
+        <textarea id="html textarea" class="panel" > hello world!</textarea>
+        <iframe  id="outout textarea" class="panel"></iframe>
+    </div>
        
+
+<script type="text/javascript">
+    
+    $(".tapButton").hover(function(){$(this).addClass("highlighedClass")},function() { $(this).removeClass("highlighedClass") });
+    $(".tapButton").click(function(){
+        $(this).toggleClass("active");
+        $(this).removeClass("highlighedClass");
+    })  
+    $(".panel").height($(window).height() - $("#topbar").height()-8 );
+      $(".panel").width($(window).width()/2- 8);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
